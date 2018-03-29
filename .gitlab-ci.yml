@@ -19,7 +19,7 @@ test_db:
   stage: test
   services:
     - postgres:9.5.0
-    - node:8.11.0
+    - renovate/renovate:11.40.0
   script:
    - npm install
    - node ./specs/start.js ./specs/db-postgres.spec.js
