@@ -18,7 +18,7 @@ test_async:
 test_db:
   stage: test
   services:
-    - postgres:9.5.0@sha256:e63199003939fc26d58e3a1f034db4e52604c4878192aa21b052feff1f3ae2a3
+    - postgres:9.6.8@sha256:eda798e53a1a2684308c3d6408400c39e1431892e77d7d790d65d64a14467a43
     - renovate/renovate:11.40.0@sha256:dec977dbbb38365a269088082396560fa34a712f696e89bfe89399073f9e7c48
   script:
    - npm install
