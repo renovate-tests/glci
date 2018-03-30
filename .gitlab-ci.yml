@@ -19,7 +19,7 @@ test_db:
   stage: test
   services:
     - postgres:9.5.0@sha256:e63199003939fc26d58e3a1f034db4e52604c4878192aa21b052feff1f3ae2a3
-    - renovate/renovate:11.40.0@sha256:dec977dbbb38365a269088082396560fa34a712f696e89bfe89399073f9e7c48
+    - renovate/renovate:11.45.8@sha256:23c242f0b3fc48c2ae8403337b0c1344adaff760c1553c335639e646b37b96ba
   script:
    - npm install
    - node ./specs/start.js ./specs/db-postgres.spec.js
